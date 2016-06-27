@@ -1,0 +1,232 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #ccc; ">
+<head>
+    <title></title>
+
+    <style>
+        table.header, .header tr, .header td {
+            padding: 0px;
+            border-spacing: 0px;
+        }
+
+        div {
+        }
+
+        .demo {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		padding:5px;
+	}
+	.demo th {
+		border:1px solid #C0C0C0;
+		padding:5px;
+		background:#F0F0F0;
+	}
+	.demo td {
+		border:1px solid #C0C0C0;
+		padding:5px;
+	}
+
+
+        html {
+            background: white;
+        }
+
+        body {
+            background-color: white;
+            margin: 0px;
+            width: 768px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .addrtbl td {
+            padding: 5px 25px;
+        }
+
+      
+
+        .no-border {
+            border: none !important;
+        }
+
+        h2 {
+            margin: 5px;
+        }
+
+        .clr-g {
+            background: #008A04;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cent {
+            text-align: center;
+        }
+
+       
+
+        .p-10 {
+            padding: 10px !important;
+        }
+
+        .bb-no {
+            border-bottom: none !important;
+            border-top: none !important;
+        }
+
+
+            .bb-no td {
+                border-bottom: none !important;
+                border-top: none !important;
+            }
+
+
+
+        .rt {
+            text-align: right;
+        }
+
+        .lt {
+            text-align: left;
+        }
+
+        .vcent {
+            vertical-align: middle !important;
+        }
+
+       
+
+      
+
+        .np {
+            white-space: nowrap;
+        }
+
+        .h100 {
+            height: 100px;
+        }
+
+        .h50 {
+            height: 50px;
+        }
+
+
+
+
+        .vb {
+            vertical-align: bottom !important;
+        }
+
+
+            .vb td {
+                vertical-align: bottom !important;
+            }
+
+        td.bb-top {
+            border-top: 1px solid black !important;
+        }
+
+        td.bb-bot {
+            border-bottom: 1px solid black !important;
+        }
+
+        .btxt {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .w300 {
+            width: 300px;
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        td.bb-top-no {
+            border-top: none !important;
+        }
+
+
+        td.bb-bot-no {
+            border-bottom: none !important;
+        }
+
+        .small-txt {
+            font-size: 12px;
+        }
+
+        .h200 {
+            height: 200px;
+        }
+
+        .w50 {
+            width: 50px;
+        }
+
+        .w150 {
+            width: 125px;
+        }
+
+        .bd {
+            font-weight: bold;
+        }
+
+
+        .ita {
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .f12 {
+            font-size: 12px;
+        }
+
+        .bubble
+        {
+            background: red;
+    color: white;
+    padding: 5px 8px 5px 8px;
+    position: absolute;
+    border-radius: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <div style=" padding:20px; width:728px; position:relative;">
+        <div style="height:100%; width:100%;">
+            <h2 id="pName"></h2>
+            <h4 id="vName"></h4>
+            <div id="proPdf" style="    min-height: 900px;">
+                <div id="comment" style="position:relative;">
+                    <span class="bubble" style="top:100px;">1</span>
+                </div>
+                <div id="imagePdf">
+
+                </div>
+              </div>
+            <div>
+               
+                <table class="demo" style="width:100%; margin-top:40px;">
+                    <tr>
+                        <th style="width:50px; text-align:left;">S.No</th>
+                        <th>Note</th>
+                    </tr>
+                    <tbody id="tbNotes"></tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

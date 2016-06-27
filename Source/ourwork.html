@@ -1,0 +1,843 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>visualinsights</title>
+
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/mediaqueries.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
+
+
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/examples.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+
+
+    <style>
+    </style>
+
+</head>
+<body>
+
+    <div class="top-nav-fixed">
+        <div class="nav-relative">
+            <!--<div class="nav-logo">
+                <img src="assets/imgs/visualinsight_logo.png" class="img-logo" />
+
+            </div>
+            <div class="nav-ul">
+                <ul>
+                    <li class="im"><a>About us</a></li>
+                    <li><a>How it works</a></li>
+                    <li><a>Our work</a></li>
+                    <li class="ls"><input type="button" value="login" class="login-btn" /></li>
+                </ul>
+            </div>-->
+            <div class="row">
+                <div class="col-md-12" style="text-align:center">
+                    <div class="col-md-3">
+                        <a href="Index.html"><img src="assets/imgs/visualinsight_logo.png" class="img-logo pull-left" /></a>
+                    </div>
+                    <div class="col-md-2" style="top:8px">
+                        <a class="nav-a" href="aboutus.html">About us</a>
+                    </div>
+                    <div class="col-md-2" style="top:8px">
+                        <a class="nav-a" href="howitworks.html">How it works</a>
+                    </div>
+                    <div class="col-md-2" style="top:8px">
+                        <a class="nav-a active" href="ourwork.html" id="ourworkmovedown">Our work</a><!--id="ourworkmovedown"-->
+                    </div>
+                    <div class="col-md-3" style="top:8px">
+                        <a href="login.aspx"><input type="button" value="Login" class="login-btn pull-right" /></a><!--id="loginmovedown"-->
+                        <input onclick="window.location.href='login.aspx'" type="button" value="Start Project" class="stProject pull-right" style="margin-right:10px;" id="startProject">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="fullpage">
+
+
+        <!--our Work-->
+        <div class="section moveDown" id="section5">
+            <div class="wrap" style="overflow: hidden;">
+
+                <div class="slide" data-anchor="slide1">
+                    <div class="row" style="text-align:center;height:100%;display:block">
+                        <div class="row" style="text-align:center;height:100%;display:block" id="our_work">
+                            <div class="col-lg-12 col-md-12" style="text-align:center;top:60px;position:relative;">
+                                <div class="col-md-3  col-lg-3"></div>
+                                <div class="col-md-6  col-lg-6" style="text-align:center;position:relative">
+                                    <div class="vi-heading-light">
+                                        Our <span class="vi-heading-bold">Work</span>
+                                        <div style="position:relative;top:-40px;display:block">
+                                            <img src="assets/imgs/blue_line.png" style="height:1px;position:relative" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3  col-lg-3"></div>
+                            </div>
+
+                            <div class="col-md-12 our1" style="position:relative;text-align:center; display:block;height:700px">
+                                <!--height:calc(100% - 142px);--><!--overflow: hidden;-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="col-md-1">
+
+                                        </div>
+                                        <div class="col-md-10" style="position:relative;text-align:center">
+                                            <div class="col-md-4 vi-heading-light" style="padding:0" id="slide-info-name">
+                                                <div class="col-md-12 " style="padding: 10px 0px;text-align:center; font-size:24px;color:#6E7579; height:68px;cursor:pointer;" id="changetext1">
+                                                    <!--onclick="infograficData()"-->
+                                                    <div>
+                                                        Infographics
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-4 vi-heading-light" style="padding:0">
+                                                <div class="col-md-12 " style="font-size:24px;text-align:center; color:#6E7579;cursor:pointer;" id="changetext2">
+                                                    <div>
+                                                        Interactive<br />
+                                                        Infographics
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-4 vi-heading-light" style="padding:0">
+                                                <div class="col-md-12 " style="font-size:24px;text-align:center; color:#6E7579;cursor:pointer;" id="changetext3">
+                                                    <div>
+                                                        Motion<br />
+                                                        Graphics
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row" id="d2-height">
+                                    <div class="col-md-12" style="    margin-top: 20px;">
+                                        <div class="col-md-1">
+
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="col-md-4" style="overflow:hidden;text-align:center;" id="slide-info-content">
+                                                <!--overflow:hidden;-->
+                                                <!--onclick="infograficData()"-->
+                                                <div class="img-info-1">
+                                                    <!--height:490px;-->
+                                                    <div class="trr trr_blue"></div>
+                                                    <img src="assets/imgs/im1.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%;cursor:pointer;" />
+                                                    <div class="img-1-txt">
+                                                        Your complex business message <br /> conveyed clearly through simple <br /> and structured visuals
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-4 deactivatepointer" style="overflow:hidden;text-align:center;" id="slide-intro-content">
+                                                <!--onclick="InteractiveData()"-->
+                                                <div class="img-info-1">
+                                                    <div class="trr trr_red"></div>
+                                                    <img src="assets/imgs/im2.png" class="grayscale disableImgWithGray" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%; cursor:pointer;" />
+                                                    <div class="img-1-txt">
+                                                        Visuals and Charts that interact <br /> with the audience to convey complex <br /> multilayered information
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-4 deactivatepointer" style="overflow:hidden;text-align:center;" id="slide-motion-content">
+                                                <!--onclick="MotiongraphicData()"-->
+                                                <div class="img-info-1">
+                                                    <div class="trr trr_yellow"></div>
+                                                    <img src="assets/imgs/im3.png" class="grayscale disableImgWithGray" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%;cursor:pointer;" />
+                                                    <div class="img-1-txt">
+                                                        Message become alive to convey <br /> information and relationships in<br /> a fun and engaging way
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="slide" data-anchor="slide2">
+                    <div class="row" style="text-align:center;height:100%;display:block" id="slide2our_work">
+                        <div class="col-lg-12" style="text-align:center;top:60px;position:relative;">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6" style="text-align:center;position:relative">
+                                <div class="vi-heading-light">
+                                    Our <span class="vi-heading-bold">Work</span>
+                                    <div style="position:relative;top:-40px;display:block">
+                                        <img src="assets/imgs/blue_line.png" style="height:1px;position:relative" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="col-md-12 ourworkInfo" style="position:relative;text-align:center;height:525px; display:block;top:15px;">
+                            <!--overflow: hidden;-->
+                            <div class="col-md-12" style="padding:0">
+                                <div style="background:#66DBFF;height:50px;position:relative;padding:0;transition:ease 1s all" id="change_div_color">
+                                    <div class="col-md-4">
+                                        <div id="ourWorkcarousel" class="carousel slidec" data-interval="false" data-ride="carousel" style="    width: 50%;padding-left: 50px;padding-right: 50px;height:50px;font-family: 'Lato_Regular';color:#6E7579;">
+                                            <div class="carousel-inner" role="listbox" style="height:50px;position:relative;top:5px;">
+                                                <div id="class_active1" class="item active" style="top:10px">
+                                                    Infographics
+                                                </div>
+
+                                                <div id="class_active2" class="item">
+                                                    Interactive<br />Infographics
+                                                </div>
+
+                                                <div id="class_active3" class="item">
+                                                    Motion<br />Graphics
+                                                </div>
+
+                                            </div>
+                                            <a class="left carousel-control cleft deactivatepointer" href="#ourWorkcarousel" role="button" data-slide="prev" style="position:absolute;left:0;top:10px;">
+                                                <span aria-hidden="true">
+                                                    <img src="assets/imgs/left_arrow.png" style="width:25px;" />
+                                                </span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="right carousel-control cright deactivatepointer" href="#ourWorkcarousel" role="button" data-slide="next" style="position:absolute;top:10px">
+                                                <span aria-hidden="true"><img src="assets/imgs/right_arrow.png" style="width:25px;" /></span><!--onclick="carousel_slide_fnc(this)"-->
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span>
+                                            <img src="assets/imgs/close.png" id="closeourwork" style="width:25px;vertical-align:central;top: 13px; position: relative;right:20px;cursor:pointer;" class="pull-right" /><!--onclick="CloseourWork()"-->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="position:relative;overflow:hidden;top:10px; margin-bottom: 30px;">
+                                <div class="col-md-12" style="display:block" id="ch_carousel1">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div id="ch_carousel1a" onclick="onClickChangeProjectName1();" class="col-md-6" style="padding-right:5px;overflow:hidden;text-align:center;">
+                                                <div style="">
+                                                    <div class="ig-im">
+                                                        <!--onclick="showProjectWorkInfo()"-->
+                                                        <div class="trr trr_blue">
+
+                                                        </div>
+                                                        <img src="assets/imgs/q1.png" class="grayscale" style="overflow:hidden;top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                        <div class="ig-imtxt">
+                                                            Connect dots better
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="ch_carousel1b" onclick="onClickChangeProjectName2();" class="col-md-6" style="padding-right:5px;overflow:hidden;text-align:center;">
+                                                <!--onclick="showProjectWorkInfo()"-->
+                                                <div class="ig-im">
+                                                    <div class="trr trr_blue">
+
+                                                    </div>
+                                                    <img src="assets/imgs/q2.png" class="grayscale" style="overflow :hidden; top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                    <div class="ig-imtxt">
+                                                        Improve communication and hence <br /> collaboration between departments
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ch_carousel1c" onclick="onClickChangeProjectName4();" class="row" style="position:relative;top:10px">
+                                            <!--onclick="showProjectWorkInfo()"-->
+                                            <div class="col-md-12" style="padding-right:5px;overflow:hidden;text-align:center;">
+                                                <div class="ig-im2">
+                                                    <div class="trr trr_blue"></div>
+                                                    <img src="assets/imgs/q4.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                    <div class="ig-im2txt">
+                                                        Make decisions faster
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div id="ch_carousel1d" onclick="onClickChangeProjectName3();" class="col-lg-4" style="padding-left:0;overflow: hidden; position: relative; left: 10px; width: 32%;">
+                                        <!--onclick="showProjectWorkInfo()"-->
+                                        <div class="ig-im3">
+                                            <div class="trr trr_blue"></div>
+                                            <img src="assets/imgs/q3.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute; min-width:100%;width:auto;" />
+
+                                            <div class="ig-im3txt">
+                                                Enable complex organizational transformations
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="display:none" id="ch_carousel2">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-6" style="padding-right:5px;overflow:hidden;text-align:center">
+                                                <!--onclick="showProjectWorkIntro()"-->
+                                                <div style="">
+                                                    <div class="ig-im">
+                                                        <div class="trr trr_red">
+
+                                                        </div>
+                                                        <img src="assets/imgs/ig1.png" class="grayscale" style="overflow:hidden;top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                        <div class="ig-imtxt">
+                                                            Visuals and Charts that interact <br /> with the audience to convey complex <br /> multilayered information
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" style="padding-right:5px;overflow:hidden;text-align:center">
+                                                <!--onclick="showProjectWorkIntro()"-->
+                                                <div style="">
+                                                    <div class="ig-im">
+                                                        <div class="trr trr_red">
+
+                                                        </div>
+                                                        <img src="assets/imgs/ig1.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                        <div class="ig-imtxt">
+                                                            Visuals and Charts that interact <br /> with the audience to convey complex <br /> multilayered information
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="position:relative;top:10px">
+                                            <!--onclick="showProjectWorkIntro()"-->
+                                            <div class="col-md-12" style="padding-right:5px;overflow:hidden;text-align:center;">
+                                                <div class="ig-im2">
+                                                    <div class="trr trr_red"></div>
+                                                    <img src="assets/imgs/ig3.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                    <div class="ig-im2txt">
+                                                        Visuals and Charts that interact <br /> with the audience to convey complex <br /> multilayered information
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="col-lg-4" style="padding-left:0;overflow: hidden; position: relative; left: 10px; width: 32%;">
+                                        <!--onclick="showProjectWorkIntro()"-->
+                                        <div class="ig-im3" style="position:relative;    padding-left: 0; ">
+                                            <div class="trr trr_red"></div>
+                                            <img src="assets/imgs/ig4.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute; min-width:100%;width:auto;" />
+
+                                            <div class="ig-im3txt">
+                                                Visuals and Charts that interact <br /> with the audience to convey complex <br /> multilayered information
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12" style="display:none" id="ch_carousel3">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-6" style="padding-right:5px;overflow:hidden;text-align:center">
+                                                <!--onclick="showProjectWorkMotion()"-->
+                                                <div style="">
+                                                    <div class="ig-im">
+                                                        <div class="trr trr_yellow">
+
+                                                        </div>
+                                                        <img src="assets/imgs/iig2.png" class="grayscale" style="overflow:hidden;top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                        <div class="ig-imtxt">
+                                                            Message become alive to convey <br /> information and relationships in<br /> a fun and engaging way
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" style="padding-right:5px;overflow:hidden;text-align:center">
+                                                <!--onclick="showProjectWorkMotion()"-->
+                                                <div style="">
+                                                    <div class="ig-im" style=" position:relative">
+                                                        <div class="trr trr_yellow">
+
+                                                        </div>
+                                                        <img src="assets/imgs/iig1.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                        <div class="ig-imtxt">
+                                                            Message become alive to convey <br /> information and relationships in<br /> a fun and engaging way
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="position:relative;top:10px">
+                                            <div class="col-md-12" style="padding-right:5px;overflow:hidden;">
+                                                <!--onclick="showProjectWorkMotion()"-->
+                                                <div class="ig-im2">
+                                                    <div class="trr trr_yellow"></div>
+                                                    <img src="assets/imgs/iig3.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute;min-width:100%;width:auto;" />
+                                                    <div class="ig-im2txt">
+                                                        Message become alive to convey <br /> information and relationships in<br /> a fun and engaging way
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="col-lg-4" style="padding-left:0;overflow: hidden; position: relative; left: 10px; width: 32%;">
+                                        <!--onclick="showProjectWorkMotion()"-->
+                                        <div class="ig-im3" style="position:relative;    padding-left: 0; ">
+                                            <div class="trr trr_yellow"></div>
+                                            <img src="assets/imgs/iig4.png" class="grayscale" style="overflow:hidden; top:0;left:0; position: absolute; min-width:100%;width:auto;" />
+
+                                            <div class="ig-im3txt">
+                                                Message become alive to convey <br /> information and relationships in<br /> a fun and engaging way
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="slide ourwork_overflow" data-anchor="slide3">
+                    <!-- project Name-->
+                    <div class="row" style="text-align:center;height:100%;display:block;overflow:hidden" id="project_name">
+                        <div class="col-lg-12" style="text-align:center;top:60px;position:relative;">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10" style="text-align:center;position:relative">
+                                <div class="col-md-12">
+                                    <div class="col-md-2">
+
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="vi-heading-light prjName">
+                                            <div class="projectname_Cls">
+                                                <div id="projectname">Project Name</div>
+                                                <!--<p id="projectname">Project Name</p></div>-->
+                                                <div class="blueLine" style="">
+                                                    <img src="assets/imgs/blue_line.png" style="width: 460px;position:relative" class="bl_line" />
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2" style="top:25px;text-align:center">
+                                        <div class="pull-right" style="display:block;position:relative;font-size: 15px; font-weight: bold; right:30px;text-align:center;top: 10px;" id="project_name_change1">
+
+                                            Infographics
+
+                                        </div>
+                                        <div class="pull-right" style="display:block; position:relative;font-size: 15px;font-weight: bold; right:30px;text-align:center" id="project_name_change2">
+
+                                            Interactive<br />Infographics
+
+                                        </div>
+                                        <div class="pull-right" style="display:block;position:relative;  font-size: 15px;font-weight: bold; right:30px;text-align:center" id="project_name_change3">
+
+                                            Motion<br />Graphics
+
+                                        </div>
+                                        <div class="pull-right" style="right: -95px; position: relative; top: 5px; display:none;" id="infobox">
+                                            <!--onclick="backtoInfo()"-->
+                                            <img src="assets/imgs/square-boxes.png" style="width:30px;cursor:pointer;" />
+                                        </div>
+                                        <div class="pull-right" style="right: -95px; position: relative; top: 5px; display:none;" id="introbox">
+                                            <!--onclick="backtoIntro()"-->
+                                            <img src="assets/imgs/square-boxes.png" style="width:30px;cursor:pointer;" />
+                                        </div>
+                                        <div class="pull-right" style="right: -95px; position: relative; top: 5px; display:none;" id="motionbox">
+                                            <!--onclick="backtoMotion()"-->
+                                            <img src="assets/imgs/square-boxes.png" style="width:30px;cursor:pointer;" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="row" style="top:180px; display:none;position:relative; height: 525px" id="infographicsProjectDisp">
+                            <div class="col-md-12" style="height:100%;top:-170px;overflow-y:auto; width:98%">
+                                <div class="col-md-1">
+
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12" style="height:385px;overflow:hidden;position:relative;padding:0;" data-toggle="modal" data-target="#infographicsModal">
+                                                <div class="project-bg">
+
+                                                    <div class="bg-dark">
+
+                                                    </div>
+                                                    <img id="slide3Img" src="assets/imgs/project-image-01.png" style="width:100%;position:absolute;left:0;top:0;" class="project-image" />
+                                                    <img src="assets/imgs/cross-point.png" class="crossPoint" style="cursor:pointer;"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row" style="">
+                                            <div class="col-md-12" style="height:150px">
+                                                <div class="project-content">
+                                                    <!--<div class="client">
+                                                    <br />
+                                                    Client: <b>Client Name</b>
+                                                    <br />
+                                                </div>-->
+                                                    <div id="content-ourwork" class="content">
+                                                        <br />
+                                                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+
+                                                    </div>
+                                                    <br />
+                                                    <br />
+                                                    <br />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row" style="top:155px; display:none;position:relative; height: 525px" id="introProjectDisp">
+                            <div class="col-md-12" style="height:100%;top:-142px;">
+                                <div class="col-md-1">
+
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12" style="height:385px;overflow:hidden;position:relative;padding:0;" data-toggle="modal" data-target="#intrographicsModal">
+                                                <div class="project-bg">
+
+                                                    <div class="bg-dark">
+
+                                                    </div>
+                                                    <img src="assets/imgs/project-image-01.png" style="width:100%;position:absolute;left:0;top:0;" class="project-image" />
+                                                    <img src="assets/imgs/cross-point.png" class="crossPoint" />
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row" style="">
+                                            <div class="col-md-12" style="overflow-y:auto; height:150px">
+                                                <div class="project-content">
+                                                    <div class="client">
+                                                        <br />
+                                                        Client: <b>Client Name</b>
+                                                        <br />
+                                                    </div>
+                                                    <div class="content">
+                                                        <br />This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row" style="top:155px;display:none;position:relative; height: 525px" id="motionProjectDisp">
+                            <div class="col-md-12" style="height:100%;top:-142px;">
+                                <div class="col-md-1">
+
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12" style="height:385px;overflow:hidden;position:relative;padding:0;" data-toggle="modal" data-target="#motiongraphicsModal">
+                                                <div class="project-bg">
+
+                                                    <div class="bg-dark">
+
+                                                    </div>
+                                                    <img src="assets/imgs/project-image-01.png" style="width:100%;position:absolute;left:0;top:0;" class="project-image" />
+                                                    <img src="assets/imgs/cross-point.png" class="crossPoint" />
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row" style="">
+                                            <div class="col-md-12" style="overflow-y:auto;height:130px">
+                                                <div class="project-content">
+                                                    <div class="client">
+                                                        <br />
+                                                        Client: <b>Client Name</b>
+                                                        <br />
+                                                    </div>
+                                                    <div class="content">
+                                                        <br /> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="infographicsModal" class="modal fade in" role="dialog">
+        <div class="modal-dialog modal-lg" style="top:110px">
+
+
+            <div class="modal-content" style="border-radius:0">
+                <!--<div class="modal-header">-->
+                    <!--<div style="position:absolute;color:#EE7171;display:block;text-align:center">
+
+                        <h3 style="margin:0;color: #EE7171;font-size: 17px;">
+                           <b>The Australian</b> 
+                        </h3>
+                        <h3 style="color: #EE7171;padding-left: 5px;">
+                            Health Landscape
+                        </h3>
+                        <hr style="border-top: 1px solid #EE7171;margin:0" />
+                        <div style="font-size: 10px;">An interactive modal</div>
+                    </div>-->
+                    <!--<div style="position:absolute;right:20px">
+                        <div style="" class="divCircle">
+                            <span style="" class="spanCircle">
+                                <img src="assets/imgs/policy.png" style="width: 30px;position: absolute;top: -31px;left: -6px;" />
+                                POLICY
+                            </span>
+                        </div>
+                        <div style="" class="divCircle">
+                            <span class="spanCircle">
+                                <img src="assets/imgs/reform.png" style="    width: 35px;position: absolute;top: -32px;left: -6px;" />
+                                REFORMS
+                            </span>
+                        </div>
+                        <div style="" class="divCircle">
+                            <span class="spanCircle">
+                                <img src="assets/imgs/regulation.png" style="width:40px;position: absolute;top: -35px;left: -3px;" />
+                                REGULATIONS
+                            </span>
+                        </div>
+                    </div>-->
+                <!--</div>-->
+                <div class="modal-body" style="padding:0; padding-top:50px;height:460px;">
+                    <img id="ch_caroshel1ImgMdl" src="assets/imgs/project-image-01.png" style="width:100%;" />
+                    <div style="display:block;height:20px;"></div>
+                    <div style="position:absolute;display:block;bottom:15px;right:15px;" data-dismiss="modal">
+                        <img src="assets/imgs/cross-air.png" style="width:20px;cursor:pointer;" />
+                    </div>
+                  
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="intrographicsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" style="top:110px">
+
+
+            <div class="modal-content" style="border-radius:0">
+                <div class="modal-header">
+                    <div style="position:absolute;color:#EE7171;display:block;text-align:center">
+
+                        <h3 style="margin:0;color: #EE7171;font-size: 17px;">
+                            <b>The Australian</b>
+                        </h3>
+                        <h3 style="color: #EE7171;padding-left: 5px;">
+                            Health Landscape
+                        </h3>
+                        <hr style="border-top: 1px solid #EE7171;margin:0" />
+                        <div style="font-size: 10px;">An interactive modal</div>
+                    </div>
+                    <div style="position:absolute;right:20px">
+                        <div style="" class="divCircle">
+                            <span style="" class="spanCircle">
+                                <img src="assets/imgs/policy.png" style="width: 30px;position: absolute;top: -31px;left: -6px;" />
+                                POLICY
+                            </span>
+                        </div>
+                        <div style="" class="divCircle">
+                            <span class="spanCircle">
+                                <img src="assets/imgs/reform.png" style="    width: 35px;position: absolute;top: -32px;left: -6px;" />
+                                REFORMS
+                            </span>
+                        </div>
+                        <div style="" class="divCircle">
+                            <span class="spanCircle">
+                                <img src="assets/imgs/regulation.png" style="width:40px;position: absolute;top: -35px;left: -3px;" />
+                                REGULATIONS
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body" style="padding:0; padding-top:50px;height:460px;overflow:hidden">
+                    <img src="assets/imgs/project-image-01.png" style="width:100%;height:100%" />
+                    <div style="position:absolute;display:block;bottom:15px;right:15px;" data-dismiss="modal">
+                        <img src="assets/imgs/cross-air.png" style="width:20px" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="motiongraphicsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" style="top:110px">
+
+
+            <div class="modal-content" style="border-radius:0">
+                <div class="modal-header">
+                    <div style="position:absolute;color:#EE7171;display:block;text-align:center">
+
+                        <h3 style="margin:0;color: #EE7171;font-size: 17px;">
+                            <b>The Australian</b>
+                        </h3>
+                        <h3 style="color: #EE7171;padding-left: 5px;">
+                            Health Landscape
+                        </h3>
+                        <hr style="border-top: 1px solid #EE7171;margin:0" />
+                        <div style="font-size: 10px;">An interactive modal</div>
+                    </div>
+                    <div style="position:absolute;right:20px">
+                        <div style="" class="divCircle">
+                            <span style="" class="spanCircle">
+                                <img src="assets/imgs/policy.png" style="width: 30px;position: absolute;top: -31px;left: -6px;" />
+                                POLICY
+                            </span>
+                        </div>
+                        <div style="" class="divCircle">
+                            <span class="spanCircle">
+                                <img src="assets/imgs/reform.png" style="    width: 35px;position: absolute;top: -32px;left: -6px;" />
+                                REFORMS
+                            </span>
+                        </div>
+                        <div style="" class="divCircle">
+                            <span class="spanCircle">
+                                <img src="assets/imgs/regulation.png" style="width:40px;position: absolute;top: -35px;left: -3px;" />
+                                REGULATIONS
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body" style="padding:0; padding-top:50px;height:460px;overflow:hidden">
+                    <img src="assets/imgs/project-image-01.png" style="width:100%;height:100%" />
+                    <div style="position:absolute;display:block;bottom:15px;right:15px;" data-dismiss="modal">
+                        <img src="assets/imgs/cross-air.png" style="width:20px" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="aboutusModal" class="modal fade" role="dialog" style="padding:0 !important ">
+        <div class="modal-dialog modal-lg" style="width:100%;height:100%;margin:0">
+
+
+            <!-- Modal content-->
+            <div class="modal-content" style="width:100%;height:100%;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+                    <h2 class="modal-title">About Us</h2>
+                </div>
+                <div class="modal-body" style="height:75%">
+                    <p>About Visual Insights</p><br />
+                    <p style="    font-size: 18px;">
+                        Gravity Consulting has been using its expertise in Information Design and Visual Communication to empower organisations and accelerate business transformations through simple, vibrant infographics. We have a solid track record of delivering Visualisation services for federal, state government and private organisations in Australia.
+                    </p> <br /><p style="    font-size: 18px;">
+                        Visual Insights is Gravity’s endeavour to take this service to the next level through an online platform. Now you can remotely request for infographics by answering a simple questionnaire and get started.
+                    </p>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>-->
+            </div>
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
